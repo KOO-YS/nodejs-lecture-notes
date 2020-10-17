@@ -1,11 +1,12 @@
 ## Node.js
- 
+
  - 서버 기반 자바 스크립트
  - 이벤트 기반
  - 비동기
  - non - blocking
  - single thread, 가볍다
- - 
+
+   
 
 #### Node.js 싱글 스레드
  - locking이란 컨셉이 없고, 이벤트의 결과를 콜백으로 받는다
@@ -28,7 +29,13 @@
 
 ---
 
-### Non - blocking
+#### 동기 vs 비동기 || blocking vs Non - blocking
+
+> [참고 블로그](https://musma.github.io/2019/04/17/blocking-and-synchronous.html)
+>
+> [참고 블로그](https://victorydntmd.tistory.com/8)
+>
+> [참고 블로그](https://brunch.co.kr/@springboot/158)
 
 - 클라이언트와 서버의 관계
 > 동기 : 클라이언트가 서버에게 보낸 요청의 결과를 기다림
@@ -38,7 +45,21 @@
 > blocking 
 > non blocking
 
-##### libuv
+
+
+> [node.js의 내부 동작 원리](https://sjh836.tistory.com/149)
+
+
+
+**libuv** : node.js에서 비동기 처리를 담당하는 라이브러리
+
+**v8** : java script 엔진으로써 자바 스크립트를 실행하는 라이브러리
+
+
+
+
+
+
 
 ##### NPM 
 - NPM을 통해 다양한 버전의 nodejs를 사용할 수 있다
@@ -55,7 +76,9 @@
     ```npm install colors```
     helloColors.js
 6. eventEmmiter
+   
     - 노드 클래스의 최상위 클래스이다
 7. stream
+   
     - pipe?
 8. socket
